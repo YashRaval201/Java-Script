@@ -33,3 +33,26 @@ const myFunction = function() {
 }
 
 console.log(typeof myObj);
+
+// +++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutube = "yashraval"
+let anotherName = myYoutube
+anotherName = "ravalyash"
+// This will be stack data structure means it will store the newer name on above the previous name
+
+console.log(myYoutube);
+console.log(anotherName);
+
+let user = {
+    email : "yash@gamil.com",
+    upi : "yash@okicici"
+}
+
+let user2 = user
+user2.email = "yash201@gmail.com"
+// This will be Heap data structer means it will store the newer data in the place of previous data. 
+console.log(user.email)
+console.log(user2.email)
